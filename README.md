@@ -11,7 +11,7 @@ Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instala
 Para obter uma cópia local do projeto, clone o repositório do GitHub com o seguinte comando:
 
 ```bash
-git clone https://github.com/pepepepu/srgpn.git
+git clone https://github.com/pepepepu/sergipanes.git
 ```
 
 Substitua `usuario` pelo seu nome de usuário do GitHub, se necessário.
@@ -40,11 +40,13 @@ O jogo será iniciado em `http://localhost:3000` no seu navegador padrão.
 O projeto está estruturado da seguinte forma:
 
 - **src/**: Contém todos os arquivos de código fonte do projeto.
-  - **components/**: Componentes reutilizáveis do jogo, como `Button`, `Paragraph`, e `Image`.
-  - **context/**: Contexto para gerenciar o estado do jogo, como pontuação e lógica do jogo.
+  - **assets/**: Contém as mídias gráficas da aplicação.
+  - **components/**: Componentes reutilizáveis do jogo, como `Button`, `Paragraph`, e `Image`, `Div` e `Input`.
+  - **context/**: Contexto para gerenciar o estado do jogo, como pontuação, nome das equipes e lógica do jogo.
   - **data/**: Dados estáticos, como a lista de perguntas e respostas.
+  - **pages/**: Páginas do jogo, como `Game Screen`, `Results Screen`, `Access Screen` e `End Game Screen`.
+  - **routes/**: Para definir as rotas da aplicação.
   - **styles/**: Estilos e cores usados no projeto.
-  - **pages/**: Páginas do jogo, como `GameTeam01`.
   - **App.tsx**: Componente principal que gerencia a navegação e a renderização do jogo.
 - **public/**: Arquivos públicos, como imagens e o arquivo `index.html`.
 - **package.json**: Gerenciador de dependências e scripts do projeto.
@@ -66,20 +68,11 @@ O objetivo do Sergipanês é responder corretamente às perguntas sobre palavras
 
 ### Componentes Principais
 
-- **`GameTeam01`**: Componente que gerencia a lógica do jogo, exibe a pergunta atual e os botões de resposta.
 - **`Button`**: Componente reutilizável para botões de ação.
 - **`Paragraph`**: Componente reutilizável para textos.
 - **`Image`**: Componente reutilizável para exibir imagens.
-
-## Contribuindo
-
-Se você quiser contribuir para o projeto, siga estas etapas:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para suas alterações (`git checkout -b minha-nova-feature`).
-3. Faça commit das suas alterações (`git commit -am 'Adiciona nova feature'`).
-4. Envie suas alterações para o repositório remoto (`git push origin minha-nova-feature`).
-5. Crie um Pull Request no GitHub.
+- **`Input`**: Componente reutilizável para caixas de entrada de texto.
+- **`Div`**: Componente reutilizável para containers.
 
 ## Licença
 
