@@ -7,6 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "ADLaM Display";
+  src: local("ADLaM Display"),
+    url('../src/assets/Fonts/ADLaMDisplay-Regular.ttf') format("truetype");
+  font-weight: bold;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
